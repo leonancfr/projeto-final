@@ -1,0 +1,52 @@
+Dedicatória
+Agradecimento
+Resumo
+Abstract
+
+Capítulo 1 -> ok (06/06)
+1.1 - Tema -> ok (06/06) v1.1
+1.2 - Delimitação -> ok (06/06) v1.1
+1.3 - Justificativa -> ok (06/06) v1.1
+1.4 - Objetivo -> ok (06/06) v1.1
+1.5 - Metodologia -> ok (06/06) v1.1
+1.6 - Descrição -> ok (06/06) v1.1
+
+Capítulo 2 -> ok (19/06)
+2.1 - Definição -> ok (06/06) v2
+2.2 - Características do conversor -> ok (06/06) v2.1
+2.3 - Dinâmica de funcionamento -> ok (15/06) v2.2
+2.4 - Equações de projeto -> ok (19/06) v2.3
+
+Capítulo 3
+3.1 - Introdução -> ok (24/06) v3
+3.2 - Modelo do conversor buck -> ok (24/06) v3
+3.3 - Modelo do conversor em ponte completa -> ok(24/06) v3
+3.3.1 - Perturbação da razão cíclica devido à variação de corrente no indutor do filtro. -> ok (25/06) v3.1
+3.3.2 - Perturbação da razão cíclica devido à variação de tensão na entrada com conversor -> ok (25/06) v3.1
+3.3.3 - Modelo de Pequenos Sinais -> ok (25/06) 
+3.4 - conclusão -> ok (25/06) v3.1
+
+Capítulo 4
+4.1 - Especificações -> ok (26/06) v4
+4.2 - Cálculo do valor dos componentes -> ok (26/06) v4
+4.3 - Projeto do controlador digital -> ok (26/06) v4 ****CONSERTAR FIGURA 4.3****
+4.3.1 - calculo do controlador de corrente -> ok(30/06) v4.1
+4.3.2 - calculo do controlador de tensão -> ok(30/06) v4.1
+4.4 - Conclusão -> ok(30/06) v4.1
+
+Capítulo 5
+5.1 - Montagem -> ok (01/07) v5
+5.3 - Simulações ideais -> ok (01/07) v5
+5.4 - Simulações considerando erros -> ok (09/07) v6.2
+5.5 - comparação entre as duas simulaçoes -> ok (09/07) v6.2
+
+Capítulo 6
+6.1 - Introdução -> ok (06/07) v6
+6.1 - Circuitos auxiliares -> ok (06/07) v6
+6.2 - Seleção de componentes reais -> ok (07/07) v6.1
+6.3 - Simulações considerando componentes reais -> ok (09/07) v6.2
+
+
+Capítulo 7 ->ok (07/07) v6.1
+
+Formatações ->ok(10/07) v7.1, final v1

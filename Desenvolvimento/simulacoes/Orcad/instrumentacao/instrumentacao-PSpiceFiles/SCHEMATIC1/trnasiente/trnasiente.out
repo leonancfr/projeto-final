@@ -1,0 +1,117 @@
+
+**** 09/14/16 20:00:58 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-trnasiente"  [ C:\Users\Leonan\Google Drive\UFRJ\Projeto Final\simulacoes\Orcad\instrumentacao\instrumentaca
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "trnasiente.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Cadence\SPB_16.5\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 10m 0 1u 
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source INSTRUMENTACAO
+E_U1         N444513 0 VALUE {LIMIT(V(N444501,N444505)*1E6,-15V,+15V)} _U1
++  N444501 N444505 1G
+
+R_R4         N444541 N444505  10k TC=0,0 
+R_R7         0 N444501  150k TC=0,0 
+R_R5         N444505 N444513  150k TC=0,0 
+R_R3         GND_SIGNAL N444541  0.002 TC=0,0 
+R_R6         GND_SIGNAL N444501  10k TC=0,0 
+E_U2         N444998 0 VALUE {LIMIT(V(0,N444941)*1E6,-15V,+15V)} _U2 0 N444941
++  1G
+
+R_R8         N444513 N444941  10k TC=0,0 
+R_R9         N444941 N444998  100k TC=0,0 
+I_I2         GND_SIGNAL N444541 DC 0Adc AC 0Aac
++SIN 5 5 120 0 0 0
+R_R10         GND_SIGNAL N447771  50 TC=0,0 
+E_U3         N446571 0 VALUE {LIMIT(V(N446517,N448777)*1E6,-15V,+15V)} _U3
++  N446517 N448777 1G
+
+R_R13         GND_SIGNAL N446517  10k TC=0,0 
+R_R12         N448777 0  10k TC=0,0 
+R_R11         N447771 N448777  10k TC=0,0 
+R_R14         N446571 N446517  10k TC=0,0 
+R_R15         N447771 N447179  1k TC=0,0 
+V_V1         N447179 GND_SIGNAL  
++SIN 30 30 120 0 0 0
+
+**** RESUMING trnasiente.cir ****
+.END
+
+**** 09/14/16 20:00:58 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-trnasiente"  [ C:\Users\Leonan\Google Drive\UFRJ\Projeto Final\simulacoes\Orcad\instrumentacao\instrumentaca
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N444501)    -.0083                   (N444505)    -.0083                       
+
+(N444513)    -.1500                   (N444541)     .0011                       
+
+(N444941)-1.500E-06                   (N444998)    1.5000                       
+
+(N446517)     .7082                   (N446571)    1.4252                       
+
+(N447179)   29.9910                   (N447771)    1.4163                       
+
+(N448777)     .7082                   (GND_SIGNAL)    -.0089                
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -2.857E-02
+
+    TOTAL POWER DISSIPATION   8.57E-01  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 09/14/16 20:00:58 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-trnasiente"  [ C:\Users\Leonan\Google Drive\UFRJ\Projeto Final\simulacoes\Orcad\instrumentacao\instrumentaca
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .95
+

@@ -1,0 +1,34 @@
+<Project name="Teste1">
+  <hierarchy />
+  <messagelist>
+    <message status="normal" label="build" scope="Teste1"><![CDATA[Generating network and source code 'C:\Users\Leonan\Google Drive\UFRJ\Projeto Final\simulacoes\PSCad\Teste1.gf42\Main.f'.]]></message>
+    <message status="normal" label="build" scope="Teste1"><![CDATA[Generating 'C:\Users\Leonan\Google Drive\UFRJ\Projeto Final\simulacoes\PSCad\Teste1.gf42\Teste1.map'.]]></message>
+    <message status="normal" label="build" scope="Teste1"><![CDATA[Time for Compile: 124ms  Make: 15ms]]></message>
+    <message status="normal" label="build" scope="Teste1"><![CDATA[Solve Time = 109ms]]></message>
+    <message status="normal" label="build" scope="Teste1"><![CDATA[Will execute: call C:\Program Files (x86)\GFortran\4.2.1\bin\gf42vars.bat]]></message>
+    <message status="normal" label="build" scope="Teste1"><![CDATA[Will execute: make -f Teste1.mak]]></message>
+    <message status="normal" label="build" scope="Teste1"><![CDATA[Will execute: C:\Users\Leonan\GOOGLE~1\UFRJ\PROJET~1\SIMULA~1\PSCad\TESTE1~1.GF4\\Teste1.bat]]></message>
+    <message status="normal" label="build" scope="Teste1"><![CDATA[Creating EMTDC executable...]]></message>
+    <message status="normal" label="build" scope="Teste1"><![CDATA[C:\Users\Leonan\Google Drive\UFRJ\Projeto Final\simulacoes\PSCad\Teste1.gf42>call C:\PROGRA~2\GFortran\428484~1.1\bin\gf42vars.bat ]]></message>
+    <message status="normal" label="build" scope="Teste1"><![CDATA[Linking object code and libraries into binary 'Teste1.exe']]></message>
+  </messagelist>
+  <emt>
+    <netlist name="Station" call_count="1" ss_count="0">
+      <signals>
+        <signal name="GND" dim="1" ss_id="0" node_map_count="1" local_storage_index="0">
+          <sg_points />
+          <node_number global="0" sg_local="0" sg_callindex="0" />
+        </signal>
+      </signals>
+      <components>
+        <component id="551768581" />
+      </components>
+    </netlist>
+  </emt>
+  <views>
+    <view name="Main" zoomlevel="6" scrollx="171" scrolly="84" />
+  </views>
+  <catalog>
+    <group name="(No Label)" />
+  </catalog>
+</Project>

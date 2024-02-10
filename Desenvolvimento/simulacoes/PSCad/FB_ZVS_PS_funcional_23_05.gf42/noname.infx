@@ -1,0 +1,18 @@
+<output name="FB_ZVS_PS_funcional_23_05" device="EMTDC" version="2010" date="2016/09/25" time="22:17:03.000000">
+  <paramlist />
+  <domain name="Time" unit="s" mult="0.0" skew="0.0">
+    <sample rate="2000000.0" end="2000000" />
+  </domain>
+  <analog>
+    <channel index="0" id="1747818926:0" name="Iout" label="" dim="1" unit="" min="-2.0" max="2.0" />
+    <channel index="1" id="1393806940:0" name="Vout" label="" dim="1" unit="" min="-2.0" max="2.0" />
+    <channel index="2" id="953631553:0" name="Iout" label="" dim="1" unit="" min="-2.0" max="2.0" />
+    <channel index="3" id="1445054651:0" name="Iin" label="" dim="1" unit="" min="-2.0" max="2.0" />
+    <channel index="4" id="1728466998:0" name="Eficiência" label="" dim="1" unit="" min="-2.0" max="2.0" />
+    <channel index="5" id="123087077:0" name="PIi" label="" dim="1" unit="" min="-2.0" max="2.0" />
+    <channel index="6" id="30914676:0" name="PIv" label="" dim="1" unit="" min="-2.0" max="2.0" />
+    <channel index="7" id="1270249417:0" name="Ia" label="" dim="1" unit="" min="-2.0" max="2.0" />
+    <channel index="8" id="445628440:0" name="Vsec" label="" dim="1" unit="" min="-2.0" max="2.0" />
+  </analog>
+  <digital />
+</output>

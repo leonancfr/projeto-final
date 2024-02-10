@@ -1,0 +1,23 @@
+<output name="FB_ZVS_PS_03_07_funcional" device="EMTDC" version="2010" date="2016/07/09" time="10:45:14.000000">
+  <paramlist />
+  <domain name="Time" unit="s" mult="0.0" skew="0.0">
+    <sample rate="2000000.0" end="2000000" />
+  </domain>
+  <analog>
+    <channel index="0" id="1393806940:0" name="Vout" label="" dim="1" unit="" min="-2.0" max="2.0" />
+    <channel index="1" id="953631553:0" name="Iout" label="" dim="1" unit="" min="-2.0" max="2.0" />
+    <channel index="2" id="1445054651:0" name="Iin" label="" dim="1" unit="" min="-2.0" max="2.0" />
+    <channel index="3" id="1728466998:0" name="Eficiência" label="" dim="1" unit="" min="-2.0" max="2.0" />
+    <channel index="4" id="968510113:0" name="S4" label="" dim="1" unit="" min="-2.0" max="2.0" />
+    <channel index="5" id="367657391:0" name="S2" label="" dim="1" unit="" min="-2.0" max="2.0" />
+    <channel index="6" id="484691285:0" name="S3" label="" dim="1" unit="" min="-2.0" max="2.0" />
+    <channel index="7" id="932008789:0" name="S1" label="" dim="1" unit="" min="-2.0" max="2.0" />
+    <channel index="8" id="514484975:0" name="CLK" label="" dim="1" unit="" min="-2.0" max="2.0" />
+    <channel index="9" id="460085450:0" name="PIi" label="" dim="1" unit="" min="-2.0" max="2.0" />
+    <channel index="10" id="30914676:0" name="PIv" label="" dim="1" unit="" min="-2.0" max="2.0" />
+    <channel index="11" id="1985344256:0" name="Ia" label="" dim="1" unit="" min="-2.0" max="2.0" />
+    <channel index="12" id="742932113:0" name="Vsec" label="" dim="1" unit="" min="-2.0" max="2.0" />
+    <channel index="13" id="338882485:0" name="Vprim" label="" dim="1" unit="" min="-2.0" max="2.0" />
+  </analog>
+  <digital />
+</output>

@@ -1,0 +1,55 @@
+
+**** 12/14/15 10:32:15 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC2-transiente"  [ C:\Users\msouza\Desktop\rshunt-pspicefiles\schematic2\transiente.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "transiente.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "C:/Users/lfranca/Desktop/opa192/OPA192_PSPICE_AIO/OPA192.lib" 
+--------------------------------------------------------------------$
+ERROR(ORPSIM-16276): Can't find library
+.LIB "../../../rshunt-pspicefiles/rshunt.lib" 
+.LIB "C:/Users/msouza/downloads/opa726/opa726_pspice_aio/opa726.lib" 
+* From [PSPICE NETLIST] section of C:\Users\lfranca\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+
+*Analysis directives: 
+.TRAN  0 0.02s 0 1u 
+.AUTOCONVERGE ITL1=1000 ITL2=1000 ITL4=1000 RELTOL=0.05 ABSTOL=1.0E-6 VNTOL=.001 PIVTOL=1.0E-10 
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC2.net" 
+
+
+
+**** INCLUDING SCHEMATIC2.net ****
+* source RSHUNT
+D_D3         0 N05118 Dbreak 
+D_D2         N05092 N05122 Dbreak 
+R_R5         N05350 0  10000k TC=0,0 
+R_R2         N05122 N05232  1 TC=0,0 
+R_R3         0 N05320  10k TC=0,0 
+D_D4         0 N05092 Dbreak 
+V_V1         N05092 N05118  AC 0
++SIN 0 51.8 120 0 0 0
+D_D1         N05118 N05122 Dbreak 
+R_R1         0 N05232  2m TC=0,0 
+V_V2         N06023 0 5
+R_R4         N05350 N05320  290k TC=0,0 
+X_U1         N05232 N05320 N06023 N065313 N05350 OPA192 
+V_V3         0 N065313 5
+
+**** RESUMING transiente.cir ****
+.END
+

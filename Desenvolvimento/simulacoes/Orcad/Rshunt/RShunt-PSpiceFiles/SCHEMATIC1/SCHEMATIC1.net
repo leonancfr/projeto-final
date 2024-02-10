@@ -1,0 +1,14 @@
+* source RSHUNT
+V_V1         N00236 N00240  AC 0
++SIN 0 51.8 120 0 0 0
+R_R1         0 N01211  2m TC=0,0 
+D_D1         N00240 N00244 Dbreak 
+D_D2         N00236 N00244 Dbreak 
+D_D3         0 N00240 Dbreak 
+D_D4         0 N00236 Dbreak 
+R_R2         N00244 N01211  1 TC=0,0 
+V_V2         N021250 0 12
+R_R3         0 N02250  10k TC=0,0 
+R_R4         N02257 N02250  290k TC=0,0 
+R_R5         N02257 0  10000k TC=0,0 
+X_U2         N01211 N02250 N021250 0 N02257 N02145 0 OPA726

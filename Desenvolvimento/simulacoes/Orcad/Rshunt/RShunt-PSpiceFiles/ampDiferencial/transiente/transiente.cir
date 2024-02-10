@@ -1,0 +1,21 @@
+** Profile: "ampDiferencial-transiente"  [ D:\backup\Users\lfranca\Orcad\Rshunt\rshunt-pspicefiles\ampdiferencial\transiente.sim ] 
+
+** Creating circuit file "transiente.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "C:/Users/lfranca/Desktop/arquivos/opa192/OPA192_PSPICE_AIO/OPA192.lib" 
+.LIB "../../../rshunt-pspicefiles/rshunt.lib" 
+* From [PSPICE NETLIST] section of C:\Users\lfranca\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 0.5s 0 1u 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\ampDiferencial.net" 
+
+
+.END

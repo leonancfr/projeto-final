@@ -1,0 +1,314 @@
+<project name="Circuito_figuras" version="4.5.0" schema="0" Target="EMTDC">
+  <paramlist name="Settings">
+    <param name="creator" value="Leonan,1462218166" />
+    <param name="time_duration" value="0.5" />
+    <param name="time_step" value="50" />
+    <param name="sample_step" value="250" />
+    <param name="chatter_threshold" value=".001" />
+    <param name="branch_threshold" value=".0005" />
+    <param name="StartType" value="0" />
+    <param name="PlotType" value="0" />
+    <param name="output_filename" value="noname.out" />
+    <param name="SnapType" value="0" />
+    <param name="SnapTime" value="0.3" />
+    <param name="snapshot_filename" value="noname.snp" />
+    <param name="MrunType" value="0" />
+    <param name="Mruns" value="10" />
+    <param name="Scenario" value="" />
+    <param name="Advanced" value="10239" />
+    <param name="Options" value="16" />
+    <param name="Build" value="18" />
+    <param name="Warn" value="0" />
+    <param name="Check" value="0" />
+    <param name="description" value="" />
+    <param name="revisor" value="Leonan, 1470598988" />
+  </paramlist>
+  <paramlist name="Validation" />
+  <hierarchy>
+    <call name="Station" link="1473276027" z="0" instance="-1" view="false">
+      <call name="Main" link="1098784451" z="0" view="true" instance="0" />
+    </call>
+  </hierarchy>
+  <definitions>
+    <Definition classid="StationDefn" name="Station" group="" url="" version="" build="" crc="119444506" instances="1" key="" view="false">
+      <paramlist name="">
+        <param name="Description" value="" />
+      </paramlist>
+      <schematic classid="StationCanvas">
+        <paramlist>
+          <param name="show_grid" value="0" />
+          <param name="size" value="0" />
+          <param name="orient" value="1" />
+          <param name="show_border" value="0" />
+          <param name="bus_expand_x" value="8" />
+          <param name="bus_expand_y" value="8" />
+          <param name="bus_length" value="4" />
+        </paramlist>
+        <Wire classid="WireBranch" name="Circuito_figuras:Main" x="180" y="180" w="62" h="80" orient="0" defn="Circuito_figuras:Main" id="1098784451" recv="-1" send="-1" back="-1">
+          <vertex x="0" y="0" />
+          <vertex x="0" y="18" />
+          <vertex x="54" y="54" />
+          <vertex x="54" y="72" />
+          <User classid="UserCmp" name="Circuito_figuras:Main" id="1098784451" x="0" y="0" w="0" h="0" z="-1" orient="0" defn="Circuito_figuras:Main" link="1098784451">
+            <paramlist link="-1" name="" />
+            <paramlist link="80260544" name="">
+              <param name="xmin" value="0.0" />
+              <param name="xmax" value="1.0" />
+            </paramlist>
+            <paramlist link="1164189084" name="">
+              <param name="ymin" value="-1" />
+              <param name="ymax" value="1" />
+            </paramlist>
+            <paramlist link="1906343482" name="">
+              <param name="xmin" value="0.0" />
+              <param name="xmax" value="1.0" />
+            </paramlist>
+            <paramlist link="28336198" name="">
+              <param name="ymin" value="-1" />
+              <param name="ymax" value="1" />
+            </paramlist>
+            <paramlist link="1403378877" name="">
+              <param name="xmin" value="0" />
+              <param name="xmax" value="1" />
+            </paramlist>
+            <paramlist link="1006904424" name="">
+              <param name="ymin" value="-1" />
+              <param name="ymax" value="1" />
+            </paramlist>
+            <paramlist link="1266255255" name="">
+              <param name="xmin" value="0.0" />
+              <param name="xmax" value="1.0" />
+            </paramlist>
+            <paramlist link="1454656678" name="">
+              <param name="ymin" value="-1" />
+              <param name="ymax" value="1" />
+            </paramlist>
+            <paramlist link="1777580152" name="">
+              <param name="xmin" value="0.0" />
+              <param name="xmax" value="1.0" />
+            </paramlist>
+            <paramlist link="475387209" name="">
+              <param name="ymin" value="-1" />
+              <param name="ymax" value="1" />
+            </paramlist>
+            <paramlist link="2136702419" name="">
+              <param name="xmin" value="0.0" />
+              <param name="xmax" value="1.0" />
+            </paramlist>
+            <paramlist link="351303300" name="">
+              <param name="ymin" value="-1" />
+              <param name="ymax" value="1" />
+            </paramlist>
+            <paramlist link="2132400638" name="">
+              <param name="xmin" value="0.0" />
+              <param name="xmax" value="1.0" />
+            </paramlist>
+            <paramlist link="1191023416" name="">
+              <param name="ymin" value="-1" />
+              <param name="ymax" value="1" />
+            </paramlist>
+            <paramlist link="353138057" name="">
+              <param name="xmin" value="0.0" />
+              <param name="xmax" value="1.0" />
+            </paramlist>
+            <paramlist link="1098137088" name="">
+              <param name="ymin" value="-1" />
+              <param name="ymax" value="1" />
+            </paramlist>
+            <paramlist link="846467562" name="">
+              <param name="xmin" value="0.0" />
+              <param name="xmax" value="1.0" />
+            </paramlist>
+            <paramlist link="1087430096" name="">
+              <param name="ymin" value="-1" />
+              <param name="ymax" value="1" />
+            </paramlist>
+            <paramlist link="2042690872" name="">
+              <param name="xmin" value="0.0" />
+              <param name="xmax" value="1.0" />
+            </paramlist>
+            <paramlist link="586653412" name="">
+              <param name="ymin" value="-1" />
+              <param name="ymax" value="1" />
+            </paramlist>
+            <paramlist link="551408007" name="">
+              <param name="xmin" value="0" />
+              <param name="xmax" value="1" />
+            </paramlist>
+            <paramlist link="1698293714" name="">
+              <param name="ymin" value="-1" />
+              <param name="ymax" value="1" />
+            </paramlist>
+            <paramlist link="1423204326" name="">
+              <param name="xmin" value="0" />
+              <param name="xmax" value="1" />
+            </paramlist>
+            <paramlist link="1872402803" name="">
+              <param name="ymin" value="-1" />
+              <param name="ymax" value="1" />
+            </paramlist>
+            <paramlist link="1478094646" name="">
+              <param name="xmin" value="0" />
+              <param name="xmax" value="1" />
+            </paramlist>
+            <paramlist link="1884787698" name="">
+              <param name="ymin" value="-1" />
+              <param name="ymax" value="1" />
+            </paramlist>
+            <paramlist link="10380068" name="">
+              <param name="xmin" value="0" />
+              <param name="xmax" value="1" />
+            </paramlist>
+            <paramlist link="1333195583" name="">
+              <param name="ymin" value="-1" />
+              <param name="ymax" value="1" />
+            </paramlist>
+            <paramlist link="1227759114" name="">
+              <param name="xmin" value="0" />
+              <param name="xmax" value="1" />
+            </paramlist>
+            <paramlist link="2002329326" name="">
+              <param name="ymin" value="-1" />
+              <param name="ymax" value="1" />
+            </paramlist>
+          </User>
+        </Wire>
+      </schematic>
+    </Definition>
+    <Definition classid="UserCmpDefn" name="Main" group="" url="" version="" build="" crc="97770102" instances="1" key="" view="false" date="0">
+      <paramlist name="">
+        <param name="Description" value="" />
+      </paramlist>
+      <form name="" w="320" h="400" splitter="60">
+        <category name="Global Substitutions" />
+      </form>
+      <svg viewBox="-200 -200 200 200">
+        <rect x="-36" y="-36" width="72" height="72" stroke="Black" stroke-dasharray="none" stroke-width="0.2" fill-style="Hollow" fill-fg="" fill-bg="" />
+        <text x="0" y="0" stroke="Black" fill="Black" font-size="Small"><![CDATA[%:Name]]></text>
+      </svg>
+      <schematic classid="UserCanvas">
+        <paramlist>
+          <param name="show_grid" value="0" />
+          <param name="size" value="0" />
+          <param name="orient" value="1" />
+          <param name="show_border" value="0" />
+          <param name="monitor_bus_voltage" value="0" />
+          <param name="show_signal" value="0" />
+          <param name="show_virtual" value="0" />
+          <param name="show_sequence" value="0" />
+          <param name="auto_sequence" value="1" />
+        </paramlist>
+        <User classid="UserCmp" defn="master:inductor" id="1901064826" x="234" y="108" w="38" h="24" z="0" orient="2" link="-1">
+          <paramlist link="-1" name="">
+            <param name="L" value="0.1 [H]" />
+          </paramlist>
+        </User>
+        <User classid="UserCmp" defn="master:inductor" id="554009480" x="180" y="180" w="24" h="38" z="0" orient="3" link="-1">
+          <paramlist link="-1" name="">
+            <param name="L" value="0.1 [H]" />
+          </paramlist>
+        </User>
+        <Wire classid="WireOrthogonal" name="" x="162" y="108" w="44" h="8" orient="0">
+          <vertex x="0" y="0" />
+          <vertex x="36" y="0" />
+        </Wire>
+        <Wire classid="WireOrthogonal" name="" x="180" y="144" w="8" h="44" orient="0">
+          <vertex x="0" y="0" />
+          <vertex x="0" y="-36" />
+        </Wire>
+        <User classid="UserCmp" defn="master:source_1" id="294855405" x="72" y="144" w="35" h="74" z="0" orient="7" link="-1">
+          <paramlist link="-1" name="">
+            <param name="Name" value="Source1" />
+            <param name="Type" value="6" />
+            <param name="Grnd" value="0" />
+            <param name="Spec" value="0" />
+            <param name="Cntrl" value="0" />
+            <param name="AC" value="0" />
+            <param name="Vm" value="132.79 [kV]" />
+            <param name="Tc" value="0.05 [s]" />
+            <param name="Ph" value="0.0 [deg]" />
+            <param name="f" value="60.0 [Hz]" />
+            <param name="P" value="0.0 [MW]" />
+            <param name="Q" value="0.0 [MVAR]" />
+            <param name="R" value="1.0 [ohm]" />
+            <param name="Rs" value="1.0 [ohm]" />
+            <param name="Rp" value="1.0 [ohm]" />
+            <param name="Lp" value="0.1 [H]" />
+            <param name="R_" value="1.0 [ohm]" />
+            <param name="L" value="0.1 [H]" />
+            <param name="C" value="1.0 [uF]" />
+            <param name="L_" value="0.1 [H]" />
+            <param name="C_" value="1.0 [uF]" />
+            <param name="CUR" value="" />
+          </paramlist>
+        </User>
+        <Wire classid="WireOrthogonal" name="" x="126" y="108" w="62" h="8" orient="0">
+          <vertex x="0" y="0" />
+          <vertex x="-54" y="0" />
+        </Wire>
+        <User classid="UserCmp" defn="master:source_1" id="807805885" x="342" y="144" w="35" h="74" z="0" orient="7" link="-1">
+          <paramlist link="-1" name="">
+            <param name="Name" value="Source1" />
+            <param name="Type" value="6" />
+            <param name="Grnd" value="0" />
+            <param name="Spec" value="0" />
+            <param name="Cntrl" value="0" />
+            <param name="AC" value="0" />
+            <param name="Vm" value="132.79 [kV]" />
+            <param name="Tc" value="0.05 [s]" />
+            <param name="Ph" value="0.0 [deg]" />
+            <param name="f" value="60.0 [Hz]" />
+            <param name="P" value="0.0 [MW]" />
+            <param name="Q" value="0.0 [MVAR]" />
+            <param name="R" value="1.0 [ohm]" />
+            <param name="Rs" value="1.0 [ohm]" />
+            <param name="Rp" value="1.0 [ohm]" />
+            <param name="Lp" value="0.1 [H]" />
+            <param name="R_" value="1.0 [ohm]" />
+            <param name="L" value="0.1 [H]" />
+            <param name="C" value="1.0 [uF]" />
+            <param name="L_" value="0.1 [H]" />
+            <param name="C_" value="1.0 [uF]" />
+            <param name="CUR" value="" />
+          </paramlist>
+        </User>
+        <Wire classid="WireOrthogonal" name="" x="180" y="180" w="8" h="44" orient="0">
+          <vertex x="0" y="0" />
+          <vertex x="0" y="36" />
+        </Wire>
+        <Wire classid="WireOrthogonal" name="" x="72" y="180" w="8" h="44" orient="0">
+          <vertex x="0" y="0" />
+          <vertex x="0" y="36" />
+        </Wire>
+        <User classid="UserCmp" defn="master:inductor" id="1925920354" x="162" y="108" w="38" h="24" z="0" orient="2" link="-1">
+          <paramlist link="-1" name="">
+            <param name="L" value="0.1 [H]" />
+          </paramlist>
+        </User>
+        <User classid="UserCmp" defn="master:inductor" id="1450115498" x="306" y="108" w="38" h="24" z="0" orient="2" link="-1">
+          <paramlist link="-1" name="">
+            <param name="L" value="0.1 [H]" />
+          </paramlist>
+        </User>
+        <Wire classid="WireOrthogonal" name="" x="270" y="108" w="44" h="8" orient="0">
+          <vertex x="0" y="0" />
+          <vertex x="-36" y="0" />
+        </Wire>
+        <Wire classid="WireOrthogonal" name="" x="306" y="108" w="44" h="8" orient="0">
+          <vertex x="0" y="0" />
+          <vertex x="36" y="0" />
+        </Wire>
+        <Wire classid="WireOrthogonal" name="" x="342" y="180" w="278" h="44" orient="0">
+          <vertex x="0" y="0" />
+          <vertex x="0" y="36" />
+          <vertex x="-270" y="36" />
+        </Wire>
+        <User classid="UserCmp" defn="master:capacitor" id="1373934275" x="432" y="126" w="42" h="30" z="0" orient="0" link="-1">
+          <paramlist link="-1" name="">
+            <param name="C" value="1.0 [uF]" />
+          </paramlist>
+        </User>
+      </schematic>
+    </Definition>
+  </definitions>
+</project>

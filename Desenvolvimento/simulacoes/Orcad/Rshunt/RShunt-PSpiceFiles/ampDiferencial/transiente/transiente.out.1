@@ -1,0 +1,57 @@
+
+**** 07/07/16 08:19:12 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "ampDiferencial-transiente"  [ D:\backup\Users\lfranca\Orcad\Rshunt\rshunt-pspicefiles\ampdiferencial\transiente.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "transiente.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "C:/Users/lfranca/Desktop/arquivos/opa192/OPA192_PSPICE_AIO/OPA192.lib" 
+-----------------------------------------------------------------------------$
+ERROR(ORPSIM-16276): Can't find library
+.LIB "../../../rshunt-pspicefiles/rshunt.lib" 
+* From [PSPICE NETLIST] section of C:\Users\lfranca\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 0.5s 0 1u 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\ampDiferencial.net" 
+
+
+
+**** INCLUDING ampDiferencial.net ****
+* source RSHUNT
+R_R5         N08168 0  10000k TC=0,0 
+R_R3         N11801 N10935  10k TC=0,0 
+D_D3         GND_SIGNAL N07932 Dbreak 
+V_V3         +5V 0 5
+R_R1         GND_SIGNAL N10935  2m TC=0,0 
+X_U1         N11801 N11698 +5V -5V N08168 OPA192 
+R_R4         N08168 N11698  300k TC=0,0 
+D_D1         N07932 N07936 Dbreak 
+R_R2         N07936 N10935  1 TC=0,0 
+V_V1         N07906 N07932  AC 0
++SIN 0 51.8 120 0 0 0
+D_D4         GND_SIGNAL N07906 Dbreak 
+D_D2         N07906 N07936 Dbreak 
+R_R6         0 N11801  300k TC=0,0 
+R_R7         N11698 GND_SIGNAL  10k TC=0,0 
+V_V4         0 -5V 5
+
+**** RESUMING transiente.cir ****
+.END
+

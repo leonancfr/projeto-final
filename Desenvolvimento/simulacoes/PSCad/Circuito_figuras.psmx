@@ -1,0 +1,32 @@
+<Project name="Circuito_figuras">
+  <hierarchy />
+  <messagelist>
+    <message status="normal" label="build" scope="Circuito_figuras"><![CDATA[Generating network and source code 'C:\Users\Leonan\Google Drive\UFRJ\Projeto Final\simulacoes\PSCad\Circuito_figuras.gf42\Main.f'.]]></message>
+    <message status="error" label="build">
+      <User scope="Circuito_figuras" name="master:peswitch" status="error" link="1630005662" /><![CDATA[Signal 'S2' dimension mismatch -> 1 != 2]]></message>
+    <message status="error" label="build">
+      <User scope="Circuito_figuras" name="master:peswitch" status="error" link="980912996" /><![CDATA[Signal 'S3' dimension mismatch -> 1 != 2]]></message>
+    <message status="error" label="build">
+      <User scope="Circuito_figuras" name="master:peswitch" status="error" link="1702115449" /><![CDATA[Signal 'S4' dimension mismatch -> 1 != 2]]></message>
+    <message status="normal" label="build" scope="Circuito_figuras"><![CDATA[Time for Compile: 156ms  Make: 0ms]]></message>
+    <message status="normal" label="build" scope="Circuito_figuras"><![CDATA[======== Build: 3 errors, 0 warnings ========]]></message>
+  </messagelist>
+  <emt>
+    <netlist name="Station" call_count="1" ss_count="0">
+      <signals>
+        <signal name="GND" dim="1" ss_id="0" node_map_count="0" local_storage_index="0">
+          <sg_points />
+        </signal>
+      </signals>
+      <components>
+        <component id="1098784451" />
+      </components>
+    </netlist>
+  </emt>
+  <views>
+    <view name="Main" zoomlevel="6" scrollx="0" scrolly="0" />
+  </views>
+  <catalog>
+    <group name="(No Label)" />
+  </catalog>
+</Project>

@@ -1,0 +1,36 @@
+VoutMin = 48V
+VoutMax = 59V
+Iout = 25A
+VinMax = 410V
+Vin = 400V
+VinMin = 390
+Fs = 100000Hz
+Ripple = 0.2V
+Eficiencia = 90/100
+
+n = 0.2
+1/n = 5
+Llk = 29,25uH
+Lout = 117,1uH
+Cout = 15,625uF
+Rl = 1,92 ohm
+Rd = 0.468
+
+-----------------------
+VoutMin = 48V
+VoutMax = 59V
+Iout = 10A
+VinMax = 410V
+Vin = 400V
+VinMin = 390V
+Fs = 100000Hz
+Ripple = 0.2V
+Eficiencia = 90/100
+
+n = 0,2
+1/n = 5
+Llk = 73,125uH
+Lout = 292,83uH
+Cout = 6,25uF
+Rl = 4.8 ohm
+Rd = 1.17

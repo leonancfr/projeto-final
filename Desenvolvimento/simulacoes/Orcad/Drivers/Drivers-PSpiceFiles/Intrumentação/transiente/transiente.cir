@@ -1,0 +1,18 @@
+** Profile: "Intrumentação-transiente"  [ C:\Users\Leonan\Google Drive\UFRJ\Projeto Final\simulacoes\Orcad\Drivers\Drivers-PSpiceFiles\Intrumentação\transiente.sim ] 
+
+** Creating circuit file "transiente.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Cadence\SPB_16.5\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 100m 0 1m 
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\Intrumentação.net" 
+
+
+.END

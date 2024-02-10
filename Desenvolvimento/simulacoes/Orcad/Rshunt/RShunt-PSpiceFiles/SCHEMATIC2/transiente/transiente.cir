@@ -1,0 +1,22 @@
+** Profile: "SCHEMATIC2-transiente"  [ C:\Users\msouza\Desktop\rshunt-pspicefiles\schematic2\transiente.sim ] 
+
+** Creating circuit file "transiente.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "C:/Users/lfranca/Desktop/arquivos/opa192/OPA192_PSPICE_AIO/OPA192.lib" 
+.LIB "../../../rshunt-pspicefiles/rshunt.lib" 
+.LIB "C:/Users/msouza/downloads/opa726/opa726_pspice_aio/opa726.lib" 
+* From [PSPICE NETLIST] section of C:\Users\lfranca\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "C:\Cadence\SPB_16.6\tools\pspice\library\nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 0.02s 0 1u 
+.AUTOCONVERGE ITL1=1000 ITL2=1000 ITL4=1000 RELTOL=0.05 ABSTOL=1.0E-6 VNTOL=.001 PIVTOL=1.0E-10 
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC2.net" 
+
+
+.END

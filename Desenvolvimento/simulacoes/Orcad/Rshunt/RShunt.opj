@@ -1,0 +1,137 @@
+(ExpressProject "RShunt"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (NoModify)
+    (File ".\rshunt.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE")
+    (RootChangedForceReNetlist "x"))
+  (Folder "Outputs"
+    (File ".\rshunt-pspicefiles\schematic1\schematic1.net"
+      (Type "Report"))
+    (File ".\rshunt-pspicefiles\schematic2\schematic2.net"
+      (Type "Report"))
+    (File ".\rshunt-pspicefiles\ampdiferencial\ampdiferencial.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\rshunt-pspicefiles\schematic1\transiente.sim"
+        (DisplayName "SCHEMATIC1-transiente")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\rshunt-pspicefiles\schematic2\transiente.sim"
+        (DisplayName "SCHEMATIC2-transiente")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\rshunt-pspicefiles\ampdiferencial\transiente.sim"
+        (DisplayName "ampDiferencial-transiente")
+        (Type "PSpice Profile"))
+      (ActiveProfile ".\rshunt-pspicefiles\ampdiferencial\transiente.sim"))
+    (Folder "Model Libraries"
+      (Sort User)
+      (File
+         "C:\Users\lfranca\Desktop\arquivos\opa192\OPA192_PSPICE_AIO\OPA192.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName
+           "C:\Users\lfranca\Desktop\arquivos\opa192\OPA192_PSPICE_AIO\OPA192.lib"))
+      (File ".\rshunt-pspicefiles\rshunt.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName ".\rshunt-pspicefiles\rshunt.lib")))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (PartMRUSelector
+    (GND_SIGNAL
+      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (GND_EARTH
+      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (GND
+      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (OPAMP
+      (FullPartName "OPAMP.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (OPA192
+      (FullPartName "OPA192.Normal")
+      (LibraryName
+         "C:\USERS\LFRANCA\DESKTOP\OPA192\OPA192_PSPICE_AIO\OPA192.OLB")
+      (DeviceIndex "0"))
+    (OPA625
+      (FullPartName "OPA625.Normal")
+      (LibraryName
+         "C:\USERS\LFRANCA\DESKTOP\OPA625\OPA625_PSPICE_AIO\OPA625.OLB")
+      (DeviceIndex "0"))
+    (OPA726
+      (FullPartName "OPA726.Normal")
+      (LibraryName
+         "C:\USERS\MSOUZA\DOWNLOADS\OPA726\OPA726_PSPICE_AIO\OPA726.OLB")
+      (DeviceIndex "0"))
+    (LT1013/LT
+      (FullPartName "LT1013/LT.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\LIN_TECH.OLB")
+      (DeviceIndex "0"))
+    (0
+      (LibraryName
+         "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (VDC
+      (FullPartName "VDC.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (LT1006/LT
+      (FullPartName "LT1006/LT.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\LIN_TECH.OLB")
+      (DeviceIndex "0"))
+    (Dbreak
+      (FullPartName "Dbreak.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\BREAKOUT.OLB")
+      (DeviceIndex "0"))
+    (VSIN
+      (FullPartName "VSIN.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (LT1006
+      (FullPartName "LT1006.Normal")
+      (LibraryName "C:\USERS\MSOUZA\DOWNLOADS\LTC\LTC.OLB")
+      (DeviceIndex "0")))
+  (LastUsedLibraryBrowseDirectory
+     "C:\Users\lfranca\Desktop\opa192\OPA192_PSPICE_AIO")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources" "C:\Users\lfranca\Orcad\Rshunt\rshunt.dsn")
+      (Path "Design Resources" "C:\Users\lfranca\Orcad\Rshunt\rshunt.dsn"
+         "ampDiferencial")
+      (Path "Design Resources" "C:\Users\lfranca\Orcad\Rshunt\rshunt.dsn"
+         "SCHEMATIC1")
+      (Path "Design Resources" "C:\Users\lfranca\Orcad\Rshunt\rshunt.dsn"
+         "SCHEMATIC2")
+      (Path "Outputs"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 0 200 0 150"))
+      (Tab 0)))
+  (MPSSessionName "lfranca"))

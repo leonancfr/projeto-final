@@ -1,0 +1,17 @@
+* source RSHUNT
+R_R5         N08168 0  10000k TC=0,0 
+R_R3         N11801 N10935  10k TC=0,0 
+D_D3         GND_SIGNAL N07932 Dbreak 
+V_V3         +5V 0 5
+R_R1         GND_SIGNAL N10935  2m TC=0,0 
+X_U1         N11801 N11698 +5V -5V N08168 OPA192 
+R_R4         N08168 N11698  300k TC=0,0 
+D_D1         N07932 N07936 Dbreak 
+R_R2         N07936 N10935  1 TC=0,0 
+V_V1         N07906 N07932  AC 0
++SIN 0 51.8 120 0 0 0
+D_D4         GND_SIGNAL N07906 Dbreak 
+D_D2         N07906 N07936 Dbreak 
+R_R6         0 N11801  300k TC=0,0 
+R_R7         N11698 GND_SIGNAL  10k TC=0,0 
+V_V4         0 -5V 5

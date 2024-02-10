@@ -1,0 +1,31 @@
+<Project name="Teste1">
+  <hierarchy />
+  <messagelist>
+    <message status="warning" label="warning">
+      <User scope="Teste1" name="halfBridgeAlgo:hbControl" status="warning" link="576199914" /><![CDATA[The definition is undefined]]></message>
+  </messagelist>
+  <emt>
+    <netlist name="Station" call_count="1" ss_count="0">
+      <signals>
+        <signal name="GND" dim="1" ss_id="0" node_map_count="1" local_storage_index="0">
+          <sg_points />
+          <node_number global="0" sg_local="0" sg_callindex="0" />
+        </signal>
+      </signals>
+      <components>
+        <component id="551768581" />
+      </components>
+    </netlist>
+  </emt>
+  <views>
+    <view name="Main" zoomlevel="6" scrollx="0" scrolly="0" />
+  </views>
+  <catalog>
+    <group name="(No Label)">
+      <item name="Untitled_3" />
+      <item name="Untitled_2" />
+      <item name="Untitled_1" />
+      <item name="Untitled" />
+    </group>
+  </catalog>
+</Project>

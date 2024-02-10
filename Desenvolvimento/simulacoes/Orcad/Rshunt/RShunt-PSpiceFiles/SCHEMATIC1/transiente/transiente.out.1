@@ -1,0 +1,352 @@
+
+**** 11/16/15 09:16:14 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-transiente"  [ C:\Users\msouza\Desktop\rshunt-pspicefiles\schematic1\transiente.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "transiente.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../rshunt-pspicefiles/rshunt.lib" 
+.LIB "C:/Users/msouza/downloads/opa726/opa726_pspice_aio/opa726.lib" 
+* From [PSPICE NETLIST] section of C:\Users\lfranca\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 0.025 0 1u 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source RSHUNT
+V_V1         N00236 N00240  AC 0
++SIN 0 51.8 120 0 0 0
+R_R1         0 N01211  2m TC=0,0 
+D_D1         N00240 N00244 Dbreak 
+D_D2         N00236 N00244 Dbreak 
+D_D3         0 N00240 Dbreak 
+D_D4         0 N00236 Dbreak 
+R_R2         N00244 N01211  1 TC=0,0 
+V_V2         N021250 0 12
+R_R3         0 N02250  10k TC=0,0 
+R_R4         N02257 N02250  290k TC=0,0 
+R_R5         N02257 0  10000k TC=0,0 
+X_U2         N01211 N02250 N021250 0 N02257 N02145 0 OPA726
+V_V4         N02145 0 4
+
+**** RESUMING transiente.cir ****
+.END
+
+**** 11/16/15 09:16:14 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-transiente"  [ C:\Users\msouza\Desktop\rshunt-pspicefiles\schematic1\transiente.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Dbreak          X_U2.DVN        X_U2.DD         X_U2.DIN        
+          IS   10.000000E-15  100.000000E-18   10.000000E-15   10.000000E-15 
+          RS  100.000000E-09                                                 
+         CJO  100.000000E-15                                                 
+          KF                   20.000000E-12                                 
+
+
+**** 11/16/15 09:16:14 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-transiente"  [ C:\Users\msouza\Desktop\rshunt-pspicefiles\schematic1\transiente.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U2.QLN        X_U2.QLP        
+               NPN             PNP             
+       LEVEL    1               1            
+          IS  100.000000E-18  100.000000E-18 
+          BF  100             100            
+          NF    1               1            
+          BR    1               1            
+          NR    1               1            
+         ISS    0               0            
+          RE    0               0            
+          RC    0               0            
+         CJE    0               0            
+         VJE     .75             .75         
+         CJC    0               0            
+         VJC     .75             .75         
+         MJC     .33             .33         
+        XCJC    1               1            
+         CJS    0               0            
+         VJS     .75             .75         
+          KF    0               0            
+          AF    1               1            
+          CN    2.42            2.2          
+           D     .87             .52         
+
+
+**** 11/16/15 09:16:14 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-transiente"  [ C:\Users\msouza\Desktop\rshunt-pspicefiles\schematic1\transiente.sim ] 
+
+
+ ****     Junction FET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U2.JNC        
+               NJF             
+         VTO   -2            
+        BETA  100.000000E-06 
+
+
+**** 11/16/15 09:16:14 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-transiente"  [ C:\Users\msouza\Desktop\rshunt-pspicefiles\schematic1\transiente.sim ] 
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U2.POUT       X_U2.NOUT       X_U2.PIN        X_U2.NIN        
+               PMOS            NMOS            PMOS            NMOS            
+       LEVEL    1               1               1               1            
+           L  100.000000E-06  100.000000E-06  100.000000E-06  100.000000E-06 
+           W  100.000000E-06  100.000000E-06  100.000000E-06  100.000000E-06 
+         VTO    -.7              .7             -.7              .7          
+          KP  200.000000E-06  200.000000E-06  200.000000E-06  200.000000E-06 
+       GAMMA    0               0               0               0            
+         PHI     .6              .6              .6              .6          
+      LAMBDA    0               0               0               0            
+          IS   10.000000E-15   10.000000E-15   10.000000E-15   10.000000E-15 
+          JS    0               0               0               0            
+          PB     .8              .8              .8              .8          
+        PBSW     .8              .8              .8              .8          
+          CJ    0               0               0               0            
+        CJSW    0               0               0               0            
+        CGSO    0               0               0               0            
+        CGDO    0               0               0               0            
+        CGBO    0               0               0               0            
+         TOX    0               0               0               0            
+          XJ    0               0               0               0            
+       UCRIT   10.000000E+03   10.000000E+03   10.000000E+03   10.000000E+03 
+      DIOMOD    1               1               1               1            
+         VFB    0               0               0               0            
+        LETA    0               0               0               0            
+        WETA    0               0               0               0            
+          U0    0               0               0               0            
+        TEMP    0               0               0               0            
+         VDD    5               5               5               5            
+       XPART    0               0               0               0            
+
+
+               X_U2.NIQ        X_U2.NET        X_U2.NEN        X_U2.PEN        
+               NMOS            NMOS            NMOS            PMOS            
+       LEVEL    1               1               1               1            
+           L  100.000000E-06  100.000000E-06  100.000000E-06  100.000000E-06 
+           W  100.000000E-06  100.000000E-06  100.000000E-06  100.000000E-06 
+         VTO     .7             1.2              .5             -.7          
+          KP  200.000000E-06  200.000000E-06  200.000000E-06  200.000000E-06 
+       GAMMA    0               0               0               0            
+         PHI     .6              .6              .6              .6          
+      LAMBDA    0               0               0               0            
+          IS    1.000000E-18    1.000000E-18    1.000000E-18    1.000000E-18 
+          JS    0               0               0               0            
+          PB     .8              .8              .8              .8          
+        PBSW     .8              .8              .8              .8          
+          CJ    0               0               0               0            
+        CJSW    0               0               0               0            
+        CGSO    0               0               0               0            
+        CGDO    0               0               0               0            
+        CGBO    0               0               0               0            
+         TOX    0               0               0               0            
+          XJ    0               0               0               0            
+       UCRIT   10.000000E+03   10.000000E+03   10.000000E+03   10.000000E+03 
+      DIOMOD    1               1               1               1            
+         VFB    0               0               0               0            
+        LETA    0               0               0               0            
+        WETA    0               0               0               0            
+          U0    0               0               0               0            
+        TEMP    0               0               0               0            
+         VDD    5               5               5               5            
+       XPART    0               0               0               0            
+
+
+               X_U2.PSW        X_U2.NSW        
+               PMOS            NMOS            
+       LEVEL    1               1            
+           L  100.000000E-06  100.000000E-06 
+           W  100.000000E-06  100.000000E-06 
+         VTO   -7.5             7.5          
+          KP  200.000000E-06  200.000000E-06 
+       GAMMA    0               0            
+         PHI     .6              .6          
+      LAMBDA    0               0            
+          IS    1.000000E-18    1.000000E-18 
+          JS    0               0            
+          PB     .8              .8          
+        PBSW     .8              .8          
+          CJ    0               0            
+        CJSW    0               0            
+        CGSO    0               0            
+        CGDO    0               0            
+        CGBO    0               0            
+         TOX    0               0            
+          XJ    0               0            
+       UCRIT   10.000000E+03   10.000000E+03 
+      DIOMOD    1               1            
+         VFB    0               0            
+        LETA    0               0            
+        WETA    0               0            
+          U0    0               0            
+        TEMP    0               0            
+         VDD    5               5            
+       XPART    0               0            
+
+
+ERROR -- Convergence problem in transient bias point calculation
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00236)     .2503 (N00240)     .2503 (N00244) 39.85E-12 (N01211) 79.55E-15     
+
+(N02145)     .0231 (N02250) 1.584E-09 (N02257) 45.95E-09 (X_U2.9) 275.9E-12     
+
+(N021250)     .0693                   (X_U2.10) 583.8E-21                       
+
+(X_U2.11)    0.0000                   (X_U2.12)    -.0022                       
+
+(X_U2.13)    -.0022                   (X_U2.14)    -.0022                       
+
+(X_U2.15) 306.8E-21                   (X_U2.16) 173.3E-06                       
+
+(X_U2.17) 173.3E-06                   (X_U2.18)     .0693                       
+
+(X_U2.19) 40.91E-18                   (X_U2.20) 216.2E-09                       
+
+(X_U2.21) 216.2E-09                   (X_U2.22) 173.3E-06                       
+
+(X_U2.23) 173.3E-06                   (X_U2.24) 898.7E-18                       
+
+(X_U2.25) 45.95E-09                   (X_U2.26)     .4616                       
+
+(X_U2.27)     .4616                   (X_U2.28)     .5806                       
+
+(X_U2.29)     .5806                   (X_U2.30) 1.584E-09                       
+
+(X_U2.31) 114.3E-15                   (X_U2.32) 433.2E-09                       
+
+(X_U2.33)    0.0000                   (X_U2.34) 4.950E-15                       
+
+(X_U2.35) 1.980E-12                   (X_U2.36) 46.32E-12                       
+
+(X_U2.37)    0.0000                   (X_U2.38) 523.2E-21                       
+
+(X_U2.39) 79.55E-15                   (X_U2.40) 3.960E-12                       
+
+(X_U2.41) 285.7E-18                   (X_U2.42) 79.55E-15                       
+
+(X_U2.43) 216.6E-09                   (X_U2.44) 45.95E-09                       
+
+(X_U2.45) 675.4E-12                   (X_U2.46) 45.95E-09                       
+
+(X_U2.47) 173.4E-06                   (X_U2.48) 65.20E-06                       
+
+(X_U2.49)-6.102E-12                   (X_U2.50) 114.3E-15                       
+
+(X_U2.51)-6.102E-12                   (X_U2.52) 1.584E-09                       
+
+(X_U2.53) 108.1E-06                   (X_U2.54) 173.3E-06                       
+
+(X_U2.55) 675.4E-12                   (X_U2.56) 216.6E-09                       
+
+(X_U2.57) 173.3E-06                   (X_U2.58) 114.3E-15                       
+
+(X_U2.59)     .0045                   (X_U2.60)-88.62E-06                       
+
+(X_U2.61) 173.3E-06                   (X_U2.62)    0.0000                       
+
+(X_U2.63) 1.584E-09                   (X_U2.64) 216.6E-09                       
+
+(X_U2.65) 1.691E-06                   (X_U2.66) 216.3E-09                       
+
+(X_U2.67) 270.2E-09                   (X_U2.68) 172.8E-06                       
+
+(X_U2.69) 14.44E-06                   (X_U2.70) 14.44E-06                       
+
+(X_U2.71) 1.299E-06                   (X_U2.72)-866.5E-09                       
+
+(X_U2.73)     .0866                   (X_U2.74)    -.0866                       
+
+(X_U2.75) 144.3E-09                   (X_U2.76) 144.3E-09                       
+
+(X_U2.77) 173.3E-06                   (X_U2.78)    0.0000                       
+
+(X_U2.79)     .0058                   (X_U2.80)     .0058                       
+
+(X_U2.81)     .0058                   (X_U2.82)    -.7026                       
+
+(X_U2.83)     .0058                   (X_U2.84)     .0058                       
+
+(X_U2.85)     .0058                   (X_U2.86)    -.4503                       
+
+(X_U2.87)     .5193                   (X_U2.88)     .5153                       
+
+(X_U2.89)    -.7355                   (X_U2.90)    -.2978                       
+
+(X_U2.91)     .1573                   (X_U2.92)     .0013                       
+
+(X_U2.93)     .5193                   (X_U2.94)     .5153                       
+
+(X_U2.95)     .0058                   (X_U2.96)     .0693                       
+
+(X_U2.97) 72.20E-09                   
+
+
+  These voltages failed to converge:
+
+    V(N00236)                 =   248.25mV  \   250.35mV
+    V(N00240)                 =   248.25mV  \   250.35mV
+
+  These supply currents failed to converge:
+
+    I(V_V1)                   =         0A  \  -465.66pA
+
+**** Interrupt ****

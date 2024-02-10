@@ -1,0 +1,21 @@
+.ALIASES
+R_R5            R5(1=N08168 2=0 ) CN @RSHUNT.ampDiferencial(sch_1):INS8134@ANALOG.R.Normal(chips)
+R_R3            R3(1=N11801 2=N10935 ) CN @RSHUNT.ampDiferencial(sch_1):INS8086@ANALOG.R.Normal(chips)
+D_D3            D3(1=GND_SIGNAL 2=N07932 ) CN @RSHUNT.ampDiferencial(sch_1):INS7882@BREAKOUT.Dbreak.Normal(chips)
+V_V3            V3(+=+5V -=0 ) CN @RSHUNT.ampDiferencial(sch_1):INS8274@SOURCE.VDC.Normal(chips)
+R_R1            R1(1=GND_SIGNAL 2=N10935 ) CN @RSHUNT.ampDiferencial(sch_1):INS7816@ANALOG.R.Normal(chips)
+X_U1            U1(+IN=N11801 -IN=N11698 V+=+5V V-=-5V VOUT=N08168 ) CN
++@RSHUNT.ampDiferencial(sch_1):INS8236@OPA192.OPA192.Normal(chips)
+R_R4            R4(1=N08168 2=N11698 ) CN @RSHUNT.ampDiferencial(sch_1):INS8108@ANALOG.R.Normal(chips)
+D_D1            D1(1=N07932 2=N07936 ) CN @RSHUNT.ampDiferencial(sch_1):INS7838@BREAKOUT.Dbreak.Normal(chips)
+R_R2            R2(1=N07936 2=N10935 ) CN @RSHUNT.ampDiferencial(sch_1):INS7992@ANALOG.R.Normal(chips)
+V_V1            V1(+=N07906 -=N07932 ) CN @RSHUNT.ampDiferencial(sch_1):INS7782@SOURCE.VSIN.Normal(chips)
+D_D4            D4(1=GND_SIGNAL 2=N07906 ) CN @RSHUNT.ampDiferencial(sch_1):INS7908@BREAKOUT.Dbreak.Normal(chips)
+D_D2            D2(1=N07906 2=N07936 ) CN @RSHUNT.ampDiferencial(sch_1):INS7860@BREAKOUT.Dbreak.Normal(chips)
+R_R6            R6(1=0 2=N11801 ) CN @RSHUNT.ampDiferencial(sch_1):INS8665@ANALOG.R.Normal(chips)
+R_R7            R7(1=N11698 2=GND_SIGNAL ) CN @RSHUNT.ampDiferencial(sch_1):INS8732@ANALOG.R.Normal(chips)
+V_V4            V4(+=0 -=-5V ) CN @RSHUNT.ampDiferencial(sch_1):INS11195@SOURCE.VDC.Normal(chips)
+_    _(+5V=+5V)
+_    _(-5V=-5V)
+_    _(GND_SIGNAL=GND_SIGNAL)
+.ENDALIASES
